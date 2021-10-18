@@ -141,17 +141,23 @@ img {
   border-radius: 30px;
   color: var(--primary);
 }
-
+.backColors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  width: 200px;
+}
 .backColors button {
   border: none;
-  height: 20px;
-  width: 20px;
+  height: 40%;
+  margin: 40px;
   border-radius: 50%;
 }
 .brder {
   border: none;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
