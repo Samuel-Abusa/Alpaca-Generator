@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(218, 218, 218);
+}
+img {
+  max-width: 85%;
+  max-height: 85%;
+}
+.main {
+  max-width: 80%;
+  margin: auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.alpacaImg {
+  background-image: url("alpaca/backgrounds/darkblue70.png");
+  height: 48.07vh;
+  width: 24vw;
+  position: relative;
+}
+.accessories,
+.ears,
+.eyes,
+.hair,
+.leg,
+.mouth,
+.neck,
+.nose {
+  position: absolute;
+}
+.neck {
+  top: 17.6%;
+  left: 3%;
+}
+.nose {
+  top: 17%;
+  left: 3%;
+}
+.mouth {
+  top: 16.5%;
+  left: 3.5%;
+}
+.hair {
+  top: 17%;
+  z-index: 1;
+}
+.leg {
+  top: 17.6%;
+  left: 5%;
+}
+.ears {
+  top: 16.5%;
+  left: 1%;
+}
+.eyes {
+  top: 17.5%;
+  left: 3%;
+  z-index: 2;
+}
