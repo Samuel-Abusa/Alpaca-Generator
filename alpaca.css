@@ -2,14 +2,17 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(218, 218, 218);
+  background: rgb(233, 233, 233);
 }
 img {
   max-width: 85%;
   max-height: 85%;
 }
+.noDisp {
+  display: none;
+}
 .main {
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
 }
 .content {
@@ -22,7 +25,10 @@ img {
   width: 24vw;
   position: relative;
 }
-.accessories,
+.earings,
+.flower,
+.glasses,
+.headphone,
 .ears,
 .eyes,
 .hair,
@@ -60,4 +66,22 @@ img {
   top: 17.5%;
   left: 3%;
   z-index: 2;
+}
+
+/* Accessories */
+.earings {
+  top: 15.5%;
+  left: 2%;
+}
+.flower {
+  top: 16%;
+  z-index: 2;
+}
+.glasses {
+  top: 16.5%;
+  left: 6%;
+  z-index: 2;
+}
+.headphone {
+  top: 17%;
 }
