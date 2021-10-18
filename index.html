@@ -6,46 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpaca Generator</title>
     <link rel="stylesheet" href="alpaca.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="alpaca.js"></script>
   </head>
   <body>
     <div class="main">
-      <h1>ALPACA GENERATOR</h1>
+      <h1
+        style="
+          color: rgba(2, 24, 56, 0.911);
+          font-weight: bolder;
+          font-size: 60px;
+        "
+      >
+        ALPACA GENERATOR
+      </h1>
       <div class="content">
-        <div class="alpacaImg">
-          <!-- Default Alpaca -->
-          <img src="alpaca/neck/default.png" alt="" class="neck" />
-          <img src="alpaca/nose.png" alt="" class="nose" />
-          <img src="alpaca/mouth/default.png" alt="" class="mouth" />
-          <img src="alpaca/hair/default.png" alt="" class="hair" />
-          <img src="alpaca/leg/default.png" alt="" class="leg" />
-          <img src="alpaca/ears/default.png" alt="" class="ears" />
-          <img src="alpaca/eyes/default.png" alt="" class="eyes" />
-          <!-- Accessories -->
-          <div class="accessories">
-            <img
-              src="alpaca/accessories/earings.png"
-              alt=""
-              class="earings noDisp"
-            />
-            <img
-              src="alpaca/accessories/flower.png"
-              alt=""
-              class="flower noDisp"
-            />
-            <img
-              src="alpaca/accessories/glasses.png"
-              alt=""
-              class="glasses noDisp"
-            />
-            <img
-              src="alpaca/accessories/headphone.png"
-              alt=""
-              class="headphone noDisp"
-            />
+        <div>
+          <div class="alpacaImg">
+            <!-- Default Alpaca -->
+            <img src="alpaca/neck/default.png" alt="" class="neck" />
+            <img src="alpaca/nose.png" alt="" class="nose" />
+            <img src="alpaca/mouth/default.png" alt="" class="mouth" />
+            <img src="alpaca/hair/default.png" alt="" class="hair" />
+            <img src="alpaca/leg/default.png" alt="" class="leg" />
+            <img src="alpaca/ears/default.png" alt="" class="ears" />
+            <img src="alpaca/eyes/default.png" alt="" class="eyes" />
+            <!-- Accessories -->
+            <div class="accessories">
+              <img
+                src="alpaca/accessories/earings.png"
+                alt=""
+                class="earings noDisp"
+              />
+              <img
+                src="alpaca/accessories/flower.png"
+                alt=""
+                class="flower noDisp"
+              />
+              <img
+                src="alpaca/accessories/glasses.png"
+                alt=""
+                class="glasses noDisp"
+              />
+              <img
+                src="alpaca/accessories/headphone.png"
+                alt=""
+                class="headphone noDisp"
+              />
+            </div>
           </div>
+          <button class="random">🔀 Random</button>
+          <button class="download">🖼 Download</button>
         </div>
         <div class="choices">
+          <h2 style="font-size: 15px; color: rgba(2, 24, 56, 0.911)">
+            ACCESSORIZE THE ALPACA'S
+          </h2>
           <div class="buttons">
             <button class="hairB">Hair</button>
             <button class="earsB">Ears</button>
@@ -55,6 +76,90 @@
             <button class="legB">Leg</button>
             <button class="accessoriesB">Accessories</button>
             <button class="backgroundB">Background</button>
+          </div>
+          <h2 style="font-size: 15px; color: rgba(2, 24, 56, 0.911)">STYLE</h2>
+          <div class="styles">
+            <div class="hairStyle noDisp">
+              <button class="default">Default</button>
+              <button class="curls">Curls</button>
+              <button class="short">Short</button>
+              <button class="bang">Bang</button>
+              <button class="elegant">Elegant</button>
+              <button class="quif">Quif</button>
+            </div>
+            <div class="earStyle noDisp">
+              <button class="default">Default</button>
+              <button class="tiltBack">Tilt backward</button>
+              <button class="tiltForward">Tilt Forward</button>
+            </div>
+            <div class="eyeStyle noDisp">
+              <button class="default">Default</button>
+              <button class="angry">Angry</button>
+              <button class="naughty">Naughty</button>
+              <button class="panda">Panda</button>
+              <button class="smart">Smart</button>
+              <button class="star">Star</button>
+            </div>
+            <div class="mouthStyle noDisp">
+              <button class="default">Default</button>
+              <button class="astonished">Astonished</button>
+              <button class="eating">Eating</button>
+              <button class="laugh">Laugh</button>
+              <button class="tongue">Tongue</button>
+            </div>
+            <div class="neckStyle noDisp">
+              <button class="default">Default</button>
+              <button class="backward">Bend backward</button>
+              <button class="forward">Bend forward</button>
+              <button class="thick">Thick</button>
+            </div>
+            <div class="legStyle noDisp">
+              <button class="default">Default</button>
+              <button class="bubbleTea">Bubble tea</button>
+              <button class="cookie">Cookie</button>
+              <button class="console">Game console</button>
+              <button class="tiltBack">Tilt backward</button>
+              <button class="tiltForward">Tilt forward</button>
+            </div>
+            <div class="accessoryStyle noDisp">
+              <button class="none">None</button>
+              <button class="fL">Flower</button>
+              <button class="eR">Earings</button>
+              <button class="headPH">Headphone</button>
+              <button class="gL">Glasses</button>
+            </div>
+            <div class="backColors">
+              <div class="brder">
+                <button
+                  class="blue50"
+                  style="background: url('alpaca/backgrounds/blue50.png')"
+                ></button>
+              </div>
+              <div class="brder">
+                <button
+                  class="blue60"
+                  style="background: url('alpaca/backgrounds/blue60.png')"
+                ></button>
+              </div>
+              <div class="brder">
+                <button
+                  class="blue70"
+                  style="background: url('alpaca/backgrounds/blue70.png')"
+                ></button>
+              </div>
+              <div class="brder">
+                <button
+                  class="dBlue30"
+                  style="background: url(alpaca/backgrounds/darkblue30.png)"
+                ></button>
+              </div>
+              <div class="brder">
+                <button
+                  class="dBlue50"
+                  style="background: url(alpaca/backgrounds/darkblue50.png)"
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
