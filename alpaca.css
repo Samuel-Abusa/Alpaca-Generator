@@ -17,7 +17,7 @@ img {
   display: none;
 }
 .main {
-  max-width: 70%;
+  max-width: 60%;
   height: 80vh;
   margin: auto;
 }
@@ -25,7 +25,8 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
+  margin: auto;
 }
 .alpacaImg {
   background-image: url("alpaca/backgrounds/darkblue70.png");
@@ -149,46 +150,19 @@ img {
   border-radius: 30px;
   color: var(--secondary);
 }
-.buttons button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.hairStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.earStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.eyeStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.mouthStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.neckStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
-.legStyle button:hover {
-  border: solid 2.1px var(--primary);
-  color: var(--primary);
-  font-weight: bold;
-}
+.buttons button:hover,
+.hairStyle button:hover,
+.earStyle button:hover,
+.eyeStyle button:hover,
+.mouthStyle button:hover,
+.neckStyle button:hover,
+.legStyle button:hover,
 .accessoryStyle button:hover {
   border: solid 2.1px var(--primary);
   color: var(--primary);
   font-weight: bold;
 }
+
 .backColors {
   display: flex;
   flex-direction: column;
