@@ -97,6 +97,7 @@ img {
   border: none;
   background: white;
   width: 11.4vw;
+  font-weight: bold;
   margin-top: 20px;
   padding: 10px 25px;
 }
@@ -105,6 +106,12 @@ img {
 }
 .download {
   margin-left: 8px;
+}
+.random:hover {
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.download:hover {
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 .choices {
   display: flex;
