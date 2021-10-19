@@ -125,7 +125,6 @@ img {
   flex-basis: 30%;
   margin: 5px;
 }
-
 .accessoriesB,
 .backgroundB {
   flex-grow: 1;
@@ -142,6 +141,46 @@ img {
   padding: 15px 25px;
   border-radius: 30px;
   color: var(--secondary);
+}
+.buttons button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.hairStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.earStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.eyeStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.mouthStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.neckStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.legStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.accessoryStyle button:hover {
+  border: solid 2.1px var(--primary);
+  color: var(--primary);
+  font-weight: bold;
 }
 .backColors {
   display: flex;
