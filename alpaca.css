@@ -3,7 +3,7 @@
 }
 :root {
   --primary: #001540;
-  --secondary: rgba(0, 21, 64, 0.503);
+  --secondary: rgba(0, 21, 64, 0.721);
 }
 body {
   background: rgb(233, 233, 233);
@@ -206,4 +206,11 @@ img {
 }
 .brder:hover {
   border: solid 2px var(--primary);
+}
+
+/* For javascript */
+.active {
+  background: var(--primary) !important;
+  color: white !important;
+  font-weight: bold !important;
 }
