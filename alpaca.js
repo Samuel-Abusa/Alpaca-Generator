@@ -18,7 +18,19 @@ const legB = document.querySelector(".legB");
 const accessoriesB = document.querySelector(".accessoriesB");
 const backgroundB = document.querySelector(".backgroundB");
 
+const random = document.querySelector(".random");
+const download = document.querySelector(".download");
+
 const styles = document.querySelector(".styles");
+
+const hairArr = [];
+const earArr = [];
+const eyesArr = [];
+const mouthArr = [];
+const neckArr = [];
+const legArr = [];
+const accArr = [];
+const backArr = [];
 
 function removeActive(selectClass) {
   document
@@ -36,6 +48,16 @@ function displayCurrentStyle(button, currClass) {
     button.classList.add("active");
   });
 }
+function select(selectClass, targetElement, e) {
+  removeActive(`${selectClass}`);
+  e.target.classList.add("active");
+  targetElement.src = e.target.dataset.url;
+}
+function creatArrEl(arr, el) {
+  document
+    .querySelectorAll(`.${el}`)
+    .forEach((element) => arr.push(element.dataset.url));
+}
 
 displayCurrentStyle(hairB, "hairStyle");
 displayCurrentStyle(earsB, "earStyle");
@@ -46,11 +68,22 @@ displayCurrentStyle(legB, "legStyle");
 displayCurrentStyle(accessoriesB, "accessoryStyle");
 displayCurrentStyle(backgroundB, "back");
 
-function select(selectClass, targetElement, e) {
-  removeActive(`${selectClass}`);
-  e.target.classList.add("active");
-  targetElement.src = e.target.dataset.url;
-}
+creatArrEl(hairArr, "dispHair");
+creatArrEl(earArr, "dispEar");
+creatArrEl(eyesArr, "dispEye");
+creatArrEl(mouthArr, "dispMouth");
+creatArrEl(neckArr, "dispNeck");
+creatArrEl(legArr, "dispLeg");
+(function () {
+  document
+    .querySelectorAll(".acc")
+    .forEach((element) => accArr.push(element.src));
+})();
+(function () {
+  document
+    .querySelectorAll(".dispBack")
+    .forEach((element) => backArr.push(element.style.background));
+})();
 
 styles.addEventListener("click", function (e) {
   if (
@@ -60,7 +93,8 @@ styles.addEventListener("click", function (e) {
     !e.target.classList.contains("dispMouth") &&
     !e.target.classList.contains("dispNeck") &&
     !e.target.classList.contains("dispLeg") &&
-    !e.target.classList.contains("dispAcc")
+    !e.target.classList.contains("dispAcc") &&
+    !e.target.classList.contains("dispBack")
   )
     return;
 
@@ -81,4 +115,17 @@ styles.addEventListener("click", function (e) {
       .querySelector(`.${e.target.textContent}`)
       ?.classList.remove("noDisp");
   }
+  if (e.target.classList.contains("dispBack")) {
+    document
+      .querySelectorAll(".dispBack")
+      .forEach((element) => element.classList.remove("activeColor"));
+    document.querySelector(
+      ".alpacaImg"
+    ).style.background = `${e.target.style.background}`;
+    e.target.classList.add("activeColor");
+  }
 });
+
+console.log(backArr);
+
+console.log(Math.floor(Math.random() * (backArr.length + 1)));
