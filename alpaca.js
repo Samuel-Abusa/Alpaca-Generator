@@ -77,7 +77,7 @@ creatArrEl(legArr, "dispLeg");
 (function () {
   document
     .querySelectorAll(".acc")
-    .forEach((element) => accArr.push(element.src));
+    .forEach((element) => accArr.push(element.classList[0]));
 })();
 (function () {
   document
@@ -126,6 +126,23 @@ styles.addEventListener("click", function (e) {
   }
 });
 
-console.log(backArr);
+random.addEventListener("click", () => {
+  hair.src = hairArr[Math.floor(Math.random() * hairArr.length)];
+  ears.src = earArr[Math.floor(Math.random() * earArr.length)];
+  eyes.src = eyesArr[Math.floor(Math.random() * eyesArr.length)];
+  mouth.src = mouthArr[Math.floor(Math.random() * mouthArr.length)];
+  neck.src = neckArr[Math.floor(Math.random() * neckArr.length)];
+  leg.src = legArr[Math.floor(Math.random() * legArr.length)];
+  leg.src = legArr[Math.floor(Math.random() * legArr.length)];
 
-console.log(Math.floor(Math.random() * (backArr.length + 1)));
+  document
+    .querySelectorAll(".acc")
+    .forEach((element) => element.classList.add("noDisp"));
+  document
+    .querySelector(`.${accArr[Math.floor(Math.random() * accArr.length)]}`)
+    .classList.remove("noDisp");
+
+  document.querySelector(".alpacaImg").style.background = `${
+    backArr[Math.floor(Math.random() * backArr.length)]
+  }`;
+});
